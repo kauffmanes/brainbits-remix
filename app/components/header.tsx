@@ -19,18 +19,20 @@ export function Header({ user }) {
             <strong>BrainBits.dev</strong>
           </Link>
         </div>
-        <div className="flex items-center gap-4">
-          <p className="text-sm">{user.email}</p>
-          <Form action="/logout" method="post">
-            <button
-              type="submit"
-              // className="rounded bg-slate-600 px-4 py-2 text-blue-100 hover:bg-blue-500 active:bg-blue-600"
-              className="ml-4 text-sm font-semibold leading-6 text-gray-900"
-            >
-              Logout
-            </button>
-          </Form>
-        </div>
+        {user ? (
+          <div className="flex items-center gap-4">
+            <p className="text-sm">{user.email}</p>
+            <Form action="/logout" method="post">
+              <button
+                type="submit"
+                // className="rounded bg-slate-600 px-4 py-2 text-blue-100 hover:bg-blue-500 active:bg-blue-600"
+                className="ml-4 text-sm font-semibold leading-6 text-gray-900"
+              >
+                Logout
+              </button>
+            </Form>
+          </div>
+        ) : null}
       </nav>
     </header>
   );
