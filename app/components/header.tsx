@@ -2,7 +2,8 @@ import { Form, Link, useLocation } from "@remix-run/react";
 
 export function Header({ user }) {
   return (
-    <header className="absolute inset-x-0 top-0 z-50 bg-white shadow">
+    <header className="absolute inset-x-0 top-0 z-50 ">
+      {/* <header className="absolute inset-x-0 top-0 z-50 bg-white shadow"> */}
       <nav
         className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
