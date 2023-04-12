@@ -47,27 +47,28 @@ export default function Index() {
                   code snippets, links, tweets, and more. Let your brain garbage
                   collect without fear.
                 </p>
-                {/* <div className='mt-10 flex items-center justify-center gap-x-6'>
-                  <a
-                    href='#'
-                    className='rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                <div className="mt-10 flex items-center justify-center gap-x-6">
+                  <Link
+                    to="/join"
+                    className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Let's go.
-                  </a>
-                  <a
-                    href='#'
-                    className='text-sm font-semibold leading-6 text-gray-900'
+                  </Link>
+                  {/* <a
+                    href="#"
+                    className="text-sm font-semibold leading-6 text-gray-900"
                   >
-                    Learn more <span aria-hidden='true'>→</span>
-                  </a>
-                </div> */}
+                    Learn more <span aria-hidden="true">→</span>
+                  </a> */}
+                </div>
               </div>
 
               {/* screenshot - replace with app */}
               <div className="mt-16 flow-root sm:mt-24">
                 <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
                   <img
-                    src="http://via.placeholder.com/2432x1442"
+                    // src="http://via.placeholder.com/2432x1442"
+                    src="/app.png"
                     alt="App screenshot"
                     width={2432}
                     height={1442}

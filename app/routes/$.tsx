@@ -2,15 +2,18 @@ import { json } from "@remix-run/node";
 import { Header } from "~/components/header";
 import { Footer } from "~/components/marketing/footer";
 import { Link } from "@remix-run/react";
+import { useUser } from "~/utils";
 
 export const loader = () => {
   return json(null, { status: 404 });
 };
 
 export default function NotFound() {
+  const user = useUser();
+
   return (
     <div>
-      <Header />
+      <Header user={user} />
       <main className="isolate">
         <div className="relative pt-14">
           <div
